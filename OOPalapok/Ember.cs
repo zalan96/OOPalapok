@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Linq;
@@ -20,16 +20,15 @@ namespace OOPalapok
 
 		public double TestTomegIndex()
 		{
-			double testindex = testSuly/Math.Sqrt(testMagassag/10);
+			double testindex = testSuly / Math.Sqrt(testMagassag / 10);
 			testindex = Math.Round(testindex, 2);
 			return testindex;
-
 		}
 
 		public bool NormalTTI()
 		{
 			double testtomegszam = TestTomegIndex();
-			if (testtomegszam>18.5&&testtomegszam<=25)
+			if (testtomegszam > 18.5 && testtomegszam <= 25)
 			{
 				return true;
 			}
@@ -39,9 +38,9 @@ namespace OOPalapok
 			}
 		}
 
-
+		public override string ToString()
+		{
+			return $"Testsúly: {testSuly}, Testmagasság: {testMagassag}";
+		}
 	}
-	
-	
-
 }

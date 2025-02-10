@@ -39,11 +39,6 @@ namespace OOPalapok
 			}
 		}
 
-		public override string ToString()
-		{
-			return $"Testsúly: {testSuly}\nTesmagasság: {testMagassag}";
-		}
-
 
 	}
 	
